@@ -1,3 +1,7 @@
+" Key maps
+nnoremap j gj
+nnoremap k gk
+
 set nocompatible              " be iMproved, required
 filetype off                  " required
 
