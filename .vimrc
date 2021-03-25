@@ -1,6 +1,8 @@
 " Key maps
 nnoremap j gj
 nnoremap k gk
+inoremap { {<CR>}<Esc>ko
+inoremap ( ()<Esc>i
 
 set nocompatible              " be iMproved, required
 filetype off                  " required
