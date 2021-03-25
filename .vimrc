@@ -4,6 +4,8 @@ nnoremap k gk
 inoremap { {<CR>}<Esc>ko
 inoremap ( ()<Esc>i
 inoremap ) <Right>
+inoremap "" ""<Left>
+inoremap '' ''<Left>
 
 set nocompatible              " be iMproved, required
 filetype off                  " required
