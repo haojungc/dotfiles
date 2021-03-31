@@ -9,8 +9,22 @@ syntax enable
 
 " Key maps
 let mapleader=","
+nnoremap <Leader>n :Vex<CR>
+nnoremap <Leader>f :Files<CR>
+
 nnoremap j gj
 nnoremap k gk
+vnoremap j gj
+vnoremap k gk
+inoremap <C-h> <C-o>h
+inoremap <C-j> <C-o>gj
+inoremap <C-k> <C-o>gk
+inoremap <C-l> <C-o>l
+
+nnoremap yy "+yy
+nnoremap p "+p
+vnoremap y "+y
+vnoremap p "+p
 inoremap { {<CR>}<Esc>ko
 inoremap ( ()<Esc>i
 inoremap ) <Right>
@@ -20,6 +34,7 @@ inoremap '' ''<Left>
 " netrw configurations
 let g:netrw_banner = 0
 let g:netrw_winsize = 25
+let g:netrw_altv = 1
 
 " Install vim-plug if not found
 if empty(glob('~/.vim/autoload/plug.vim'))
