@@ -10,7 +10,8 @@ syntax enable
 " Key maps
 let mapleader=","
 nnoremap <Leader>n :Vex<CR>
-nnoremap <Leader>f :Files<CR>
+nnoremap <Leader>e :Files<CR>
+nnoremap <Leader><C-f> :Ag <C-r><C-w><CR>
 
 nnoremap j gj
 nnoremap k gk
