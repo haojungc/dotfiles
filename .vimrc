@@ -20,17 +20,13 @@ vnoremap k gk
 inoremap <C-h> <C-o>h
 inoremap <C-j> <C-o>gj
 inoremap <C-k> <C-o>gk
-inoremap <C-l> <C-o>l
+inoremap <C-l> <Right>
 
 nnoremap yy "+yy
 nnoremap p "+p
 vnoremap y "+y
 vnoremap p "+p
 inoremap { {<CR>}<Esc>ko
-inoremap ( ()<Esc>i
-inoremap ) <Right>
-inoremap "" ""<Left>
-inoremap '' ''<Left>
 
 " netrw configurations
 let g:netrw_banner = 0
