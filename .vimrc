@@ -17,10 +17,6 @@ nnoremap j gj
 nnoremap k gk
 vnoremap j gj
 vnoremap k gk
-inoremap <C-h> <C-o>h
-inoremap <C-j> <C-o>gj
-inoremap <C-k> <C-o>gk
-inoremap <C-l> <Right>
 
 nnoremap yy "+yy
 nnoremap p "+p
