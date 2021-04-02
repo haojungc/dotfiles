@@ -18,6 +18,8 @@ nnoremap k gk
 vnoremap j gj
 vnoremap k gk
 
+inoremap <C-w> <C-o>diW
+
 nnoremap yy "+yy
 nnoremap p "+p
 vnoremap y "+y
