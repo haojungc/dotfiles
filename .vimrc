@@ -18,7 +18,7 @@ nnoremap k gk
 vnoremap j gj
 vnoremap k gk
 
-inoremap <C-w> <C-o>diW
+inoremap <C-w> <C-o>diw
 
 nnoremap yy "+yy
 nnoremap p "+p
