@@ -71,4 +71,7 @@ Plug 'vim-airline/vim-airline'
 " commenter
 Plug 'scrooloose/nerdcommenter'
 
+" auto pairs
+Plug 'jiangmiao/auto-pairs'
+
 call plug#end()
