@@ -19,12 +19,15 @@ vnoremap j gj
 vnoremap k gk
 
 inoremap <C-w> <C-o>diw
+vnoremap " c"<C-r>""<Esc>
+vnoremap ' c'<C-r>"'<Esc>
+vnoremap ( c(<C-r>")<Esc>
 
-nnoremap yy "+yy
-nnoremap p "+p
-vnoremap y "+y
-vnoremap p "+p
-inoremap { {<CR>}<Esc>ko
+nnoremap YY "+yy
+vnoremap Y "+y
+nnoremap Yiw "+yiw
+nnoremap <Leader>P "+P
+nnoremap <Leader>p "+p
 
 " netrw configurations
 let g:netrw_banner = 0
