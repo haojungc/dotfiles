@@ -41,10 +41,14 @@ Plug 'scrooloose/nerdcommenter'
 " auto pairs
 Plug 'jiangmiao/auto-pairs'
 
-" colorscheme
+" colorschemes
 Plug 'sjl/badwolf'
+Plug 'sickill/vim-monokai'
 
 call plug#end()
+
+colorscheme monokai
+syntax on
 
 set encoding=utf-8
 set autoindent
@@ -53,9 +57,6 @@ set shiftwidth=4
 set expandtab
 set splitright
 set splitbelow
-
-colorscheme badwolf
-syntax on
 
 " Key maps
 let mapleader=","
