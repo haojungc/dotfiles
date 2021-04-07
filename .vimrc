@@ -1,39 +1,3 @@
-set encoding=utf-8
-set autoindent
-set tabstop=4
-set shiftwidth=4
-set expandtab
-set splitright
-set splitbelow
-syntax enable
-
-" Key maps
-let mapleader=","
-nnoremap <Leader>n :Vex<CR>
-nnoremap <Leader>e :Files<CR>
-nnoremap <Leader><C-f> :Ag <C-r><C-w><CR>
-
-nnoremap j gj
-nnoremap k gk
-vnoremap j gj
-vnoremap k gk
-
-inoremap <C-w> <C-o>diw
-vnoremap " c"<C-r>""<Esc>
-vnoremap ' c'<C-r>"'<Esc>
-vnoremap ( c(<C-r>")<Esc>
-
-nnoremap YY "+yy
-vnoremap Y "+y
-nnoremap Yiw "+yiw
-nnoremap <Leader>P "+P
-nnoremap <Leader>p "+p
-
-" netrw configurations
-let g:netrw_banner = 0
-let g:netrw_winsize = 25
-let g:netrw_altv = 1
-
 " Install vim-plug if not found
 if empty(glob('~/.vim/autoload/plug.vim'))
   silent !curl -fLo ~/.vim/autoload/plug.vim --create-dirs
@@ -77,4 +41,46 @@ Plug 'scrooloose/nerdcommenter'
 " auto pairs
 Plug 'jiangmiao/auto-pairs'
 
+" colorscheme
+Plug 'sjl/badwolf'
+
 call plug#end()
+
+set encoding=utf-8
+set autoindent
+set tabstop=4
+set shiftwidth=4
+set expandtab
+set splitright
+set splitbelow
+
+colorscheme badwolf
+syntax on
+
+" Key maps
+let mapleader=","
+nnoremap <Leader>n :Vex<CR>
+nnoremap <Leader>e :Files<CR>
+nnoremap <Leader><C-f> :Ag <C-r><C-w><CR>
+
+nnoremap j gj
+nnoremap k gk
+vnoremap j gj
+vnoremap k gk
+
+inoremap <C-w> <C-o>diw
+vnoremap " c"<C-r>""<Esc>
+vnoremap ' c'<C-r>"'<Esc>
+vnoremap ( c(<C-r>")<Esc>
+
+nnoremap YY "+yy
+vnoremap Y "+y
+nnoremap Yiw "+yiw
+nnoremap <Leader>P "+P
+nnoremap <Leader>p "+p
+
+" netrw configurations
+let g:netrw_banner = 0
+let g:netrw_winsize = 25
+let g:netrw_altv = 1
+
