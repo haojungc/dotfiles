@@ -9,16 +9,6 @@ autocmd VimEnter * if len(filter(values(g:plugs), '!isdirectory(v:val.dir)'))
   \| PlugInstall --sync | source $MYVIMRC
 \| endif
 
-function! BuildYCM(info)
-  " info is a dictionary with 3 fields
-  " - name:   name of the plugin
-  " - status: 'installed', 'updated', or 'unchanged'
-  " - force:  set on PlugInstall! or PlugUpdate!
-  if a:info.status == 'installed' || a:info.force
-    !./install.py
-  endif
-endfunction
-
 " Specify a directory for plugins
 call plug#begin('~/.vim/plugged')
 
@@ -27,7 +17,7 @@ Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 
 " autocompleter
-Plug 'Valloric/YouCompleteMe', { 'do': function('BuildYCM') }
+Plug 'zxqfl/tabnine-vim'
 
 " git
 Plug 'tpope/vim-fugitive'
