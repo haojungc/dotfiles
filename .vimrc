@@ -40,6 +40,9 @@ call plug#end()
 colorscheme monokai
 syntax on
 
+" Popup menu
+highlight! Pmenu ctermbg=gray guibg=gray
+
 set encoding=utf-8
 set autoindent
 set tabstop=4
