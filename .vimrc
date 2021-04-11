@@ -50,6 +50,7 @@ set shiftwidth=4
 set expandtab
 set splitright
 set splitbelow
+set noequalalways
 
 " Key maps
 let mapleader=","
