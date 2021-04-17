@@ -51,6 +51,7 @@ set expandtab
 set splitright
 set splitbelow
 set noequalalways
+set number
 
 " Key maps
 let mapleader=","
