@@ -64,7 +64,6 @@ nnoremap k gk
 vnoremap j gj
 vnoremap k gk
 
-inoremap <C-w> <C-o>diw
 vnoremap " c"<C-r>""<Esc>
 vnoremap ' c'<C-r>"'<Esc>
 vnoremap ( c(<C-r>")<Esc>
