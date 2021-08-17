@@ -16,9 +16,6 @@ call plug#begin('~/.vim/plugged')
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 
-" autocompleter
-Plug 'zxqfl/tabnine-vim'
-
 " git
 Plug 'tpope/vim-fugitive'
 
@@ -32,16 +29,12 @@ Plug 'scrooloose/nerdcommenter'
 Plug 'jiangmiao/auto-pairs'
 
 " colorschemes
-Plug 'sjl/badwolf'
 Plug 'sickill/vim-monokai'
 
 call plug#end()
 
 colorscheme monokai
 syntax on
-
-" Popup menu
-highlight! Pmenu ctermbg=gray guibg=gray
 
 set encoding=utf-8
 set autoindent
@@ -52,6 +45,7 @@ set splitright
 set splitbelow
 set noequalalways
 set number
+set cursorline
 
 " Key maps
 let mapleader=","
