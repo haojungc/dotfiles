@@ -1,5 +1,8 @@
 # Things to Do After Installing Ubuntu 20.04
 
+[![hackmd-github-sync-badge](https://hackmd.io/C7PvmTDNQBakhNj8PPA8jg/badge)](https://hackmd.io/C7PvmTDNQBakhNj8PPA8jg)
+
+
 ## Setup
 ### Installing latest updates
 ```shell
