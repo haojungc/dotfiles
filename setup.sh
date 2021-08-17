@@ -1,12 +1,15 @@
-#!/usr/bin/env bash
+sudo apt update
 
-# Create symbolic links
-ln -s -f ~/dotfiles/.vimrc ~/.vimrc
+sudo apt install vim-gtk3
+sudo apt install build-essential
+sudo apt install snapd
+sudo apt install curl
+sudo apt install tig
+sudo apt install silversearcher-ag
+sudo apt install bat
+sudo apt install gnome-tweak-tool && printf "\nSwap ESC and Caps Lock\n" && gnome-tweaks
 
-# Install silversearcher
-sudo apt-get -y install silversearcher-ag
-
-# Install bat
-sudo apt -y install bat
-mkdir -p ~/.local/bin
-ln -s -f /usr/bin/batcat ~/.local/bin/bat
+if ! grep -q "batcat" ~/.bashrc; then
+    echo "Creating alias for batcat (bat -> batcat)..."
+    echo "alias bat=\"batcat\"" >> ~/.bashrc
+fi
