@@ -29,10 +29,10 @@ You could connect GitHub with SSH by following the [official instructions](https
 After setting up your Git configuration, you could now clone this repository to your computer using the below command:
 ```shell
 # HTTPS
-$ git clone https://github.com/nickchenchj/dotfiles.git
+$ git clone https://github.com/haojungc/dotfiles.git
 
 # SSH
-$ git clone git@github.com:nickchenchj/dotfiles.git
+$ git clone git@github.com:haojungc/dotfiles.git
 ```
 
 Change the working directory to the one you have just cloned to, and run the following command in your terminal. It will automatically install the required packages and dependencies for you:
