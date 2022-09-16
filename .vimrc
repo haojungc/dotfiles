@@ -38,9 +38,9 @@ syntax on
 
 set encoding=utf-8
 set autoindent
+set expandtab
 set tabstop=4
 set shiftwidth=4
-set expandtab
 set splitright
 set splitbelow
 set noequalalways
@@ -73,3 +73,5 @@ let g:netrw_banner = 0
 let g:netrw_winsize = 25
 let g:netrw_altv = 1
 
+" configurations for particular filetype
+autocmd FileType html setlocal shiftwidth=2 tabstop=2
