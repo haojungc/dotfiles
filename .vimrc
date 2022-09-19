@@ -74,4 +74,4 @@ let g:netrw_winsize = 25
 let g:netrw_altv = 1
 
 " configurations for particular filetype
-autocmd FileType html setlocal shiftwidth=2 tabstop=2
+autocmd FileType html,css setlocal shiftwidth=2 tabstop=2
