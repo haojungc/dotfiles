@@ -68,6 +68,9 @@ nnoremap Yiw "+yiw
 nnoremap <Leader>P "+P
 nnoremap <Leader>p "+p
 
+inoremap {<Enter> {<CR><CR>}<Esc>kS
+inoremap {<C-j> {<CR><CR>}<Esc>kS
+
 " netrw configurations
 let g:netrw_banner = 0
 let g:netrw_winsize = 25
