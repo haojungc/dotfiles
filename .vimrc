@@ -46,6 +46,7 @@ set splitbelow
 set noequalalways
 set number
 set cursorline
+set belloff=all
 
 " Key maps
 let mapleader=","
