@@ -59,6 +59,9 @@ nnoremap k gk
 vnoremap j gj
 vnoremap k gk
 
+nnoremap <C-h> :tabprevious<CR>
+nnoremap <C-l> :tabnext<CR>
+
 vnoremap " c"<C-r>""<Esc>
 vnoremap ' c'<C-r>"'<Esc>
 vnoremap ( c(<C-r>")<Esc>
