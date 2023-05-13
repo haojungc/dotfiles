@@ -1,3 +1,5 @@
-ln -sfn "${PWD}/.vimrc" ~/.vimrc
-ln -sfn "${PWD}/.clang-format" ~/.clang-format
-ln -sfn "${PWD}"/.tmux.conf ~/.tmux.conf
+#!/usr/bin/env bash
+
+ln -sfnv "${PWD}/.vimrc" ~/.vimrc
+ln -sfnv "${PWD}/.clang-format" ~/.clang-format
+ln -sfnv "${PWD}"/.tmux.conf ~/.tmux.conf
