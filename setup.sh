@@ -1,10 +1,13 @@
 #!/usr/bin/env bash
 
+pkgs="vim-gtk3 tig curl \
+      build-essential clang-format \
+      cppcheck aspell colordiff \
+      valgrind"
+
 sudo apt update
 
-sudo apt install vim-gtk3 tig curl \
-    build-essential clang-format \
-    cppcheck aspell colordiff valgrind
+sudo apt install -y ${pkgs}
 sudo apt install snapd
 sudo apt install silversearcher-ag
 sudo apt install bat
